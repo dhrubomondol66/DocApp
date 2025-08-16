@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="" /> <!-- Include your CSS file -->
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+nav {
+    background-color: #003e63;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+nav h1 {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav .back-btn {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+nav .back-btn .icon {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s;
+}
+
+nav .back-btn .icon:hover {
+    transform: scale(1.1);
+}
+
+nav .back-btn .logo {
+    height: 30px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    nav .back-btn .logo {
+        height: 30px;
+        margin-left: -15px;
+        border-radius: 10px;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.div1, .div2, .div3, .div4 {
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover {
+    transform: translateY(-3px);
+}
+
+.div1-1, .div2-1, .div3-1, .div4-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+.div1-2, .div2-2, .div3-2, .div4-2 {
+    font-size: 1rem;
+    color: #555;
+}
+</style>
+<body>
+    <nav>
+        <a href="userDashboard.php" class="back-btn">
+            <img src="imagesforweb/back.png" alt="Back" class="icon">
+            <img src="imagesforweb/D O C A P P.png" alt="Logo" class="logo">
+        </a>
+        <h1>Doctors List</h1>
+    </nav>
+    <section>
+        <div class="div1">
+            <div class="div1-1">
+                <h3>doctor1</h3>
+                <button>payment</button>
+            </div>
+            <div class="div1-2">
+                <p>diet cart</p>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="div2-1">
+                <h3>doctor2</h3>
+                <button>payment</button>
+            </div>
+            <div class="div2-2">
+                <p>diet cart</p>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="div3-1">
+                <h3>doctor3</h3>
+                <button>payment</button>
+            </div>
+            <div class="div3-2">
+                <p>diet cart</p>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="div4-1">
+                <h3>doctor4</h3>
+                <button>payment</button>
+            </div>
+            <div class="div4-2">
+                <p>diet cart</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
